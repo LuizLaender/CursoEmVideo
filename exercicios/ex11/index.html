@@ -26,7 +26,14 @@
         <p>
             vamos aprender a reproduzir audios em html5
         </p>
-        <audio src="media/audio.mp3" controls autoplay></audio>
+        <audio preload="none" controls>
+            <source src="media/audio.mp3" type="audio/mp3">
+            <!-- <source src="media/audio.ogg" type="audio/ogg"> for .ogg files -->
+            <!-- <source src="media/audio.wav" type="audio/wav"> for .wav files -->
+            <p>
+                infelismente seu navegador nao consegue reproduzir audio. clique <a href="media/audio.mp3">aqui</a> para baixar o arquivo mp3
+            </p>
+        </audio>
 
     </body>
 </html>
