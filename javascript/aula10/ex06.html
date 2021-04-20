@@ -8,7 +8,7 @@
         <style>
             div#area {
                 font: bold normal 20px Arial;
-                background: rgb(0, 216, 0);
+                background: green;
                 color: white;
                 width: 200px;
                 height: 200px;
@@ -23,23 +23,23 @@
         <div id="area">
             Interaja...
         </div>
+
         <script>
             var a = window.document.getElementById('area')
-
-            a.addEventListener('click', clicar)
-            a.addEventListener('mouseenter', entrar)
+            a.addEventListener('clicl', clicar)
+            a.addEventListener('mouseover', entrar)
             a.addEventListener('mouseout', sair)
-
+            
             function clicar() {
                 a.innerText = 'clicou'
                 a.style.background = 'red'
             }
             function entrar() {
-                a.innerText = 'entrou!'
+                a.innerText = 'entrou'
             }
             function sair() {
-                a.innerText = 'saiu!'
-                a.style.background = 'rgb(0, 216, 0)'
+                a.innerText = 'saiu'
+                a.style.background = 'green'
             }
         </script>
     </body>
